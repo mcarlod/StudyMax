@@ -83,9 +83,6 @@ export function useVapi(book: IBook) {
     const finalizeRef = useLatestRef(finalizeVoiceSession);
     const voice = book.persona || DEFAULT_VOICE;
 
-    console.log("VAPI KEY:", VAPI_API_KEY);
-    console.log("ASSISTANT:", ASSISTANT_ID);
-
     // Set up Vapi event listeners
     useEffect(() => {
         const currentDurationRef = durationRef;
